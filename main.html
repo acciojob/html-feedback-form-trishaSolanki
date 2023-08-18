@@ -8,69 +8,16 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<style>
-		table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-		th, td{
-    padding: 10px;
-    border: 1px solid ;
-}
-		.colored-row {
-    background-color: whitesmoke; /* Set a background color for the colored rows */
-    color: black; /* Set text color for the colored rows */
-}
-
-
-	</style>
-	<form action="/submit" method="POST">
-	<center><h1>Feedback Form</h1></center>
-	
-	<table>
-		
-		<tr>
-			<th>Element</th>
-			<th>ID</th>
-			<th>Type</th>
-			<th>Attributes</th>
-			<th>Label Required</th>
-		</tr>
-		<tr class="colored-row">
-			 
-			<td>Name</td>
-			<td>name</td>
-			<td>Text</td>
-			<td>minlength="3", maxlength="50", required</td>
-			<td>Yes</td>
-		</tr>
-		<tr>
-			
-			<td>Portfolio</td>
-			<td>portfolio</td>
-			<td>URL</td>
-			<td>required</td>
-			<td>Yes</td>
-		</tr>
-		<tr class="colored-row">
-			
-			<td>Favorite Color</td>
-			<td>favColor</td>
-			<td>Color</td>
-			<td>N/A</td>
-			<td>Yes</td>
-		</tr>
-		<tr>
-			
-			<td>Likeness</td>
-			<td>likeness</td>
-			<td>Range</td>
-			<td>min="1", max="100"</td>
-			<td>Yes</td>
-		</tr>
-		
-	</table>
+	<h1>Feedback Form</h1>
+	<form method="post">
+	<lable for="name">Name</lable>
+		<input type="text" id="name" minlength="3" maxlength="50" required><br></br>
+		<lable for="portfolio">Portfolio</lable>
+		<input type="URL" id="portfolio" required><br></br>
+		<lable for="favColor">Favorite Color</lable>
+		<input type="Color" id="favColor"><br></br>
+		<lable for="likeness">Likeness</lable>
+		<input type="Range" id="likeness" min="1" max="100"><br></br
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
