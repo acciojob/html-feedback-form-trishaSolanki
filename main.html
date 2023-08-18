@@ -9,13 +9,21 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<style>
-		table, th, td{
-			border: 1px solid black;
-		}
-		td{
-			row-color: lightgray;
-		}
-		
+		table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+		th, td{
+    padding: 10px;
+    border: 1px solid black;
+}
+		.colored-row {
+    background-color: whitesmoke; /* Set a background color for the colored rows */
+    color: black; /* Set text color for the colored rows */
+}
+
+
 	</style>
 	<center><h1>"Feedback Form"</h1></center>
 	<table>
@@ -26,7 +34,7 @@
 			<th>Attribute</th>
 			<th>Label Required</th>
 		</tr>
-		<tr>
+		<tr class="colored-row">
 			 
 			<td>Name</td>
 			<td>name</td>
@@ -42,7 +50,7 @@
 			<td>required</td>
 			<td>Yes</td>
 		</tr>
-		<tr>
+		<tr class="colored-row">
 			
 			<td>Favorite Color</td>
 			<td>favColor</td>
